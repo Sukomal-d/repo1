@@ -1,0 +1,16 @@
+pipeline{
+  agent any{
+    stages{
+      stage('build'){
+        steps{
+          sh 'echo "Build is sussessful via integration from github"'
+            }
+          }
+      stage ('deploy'){
+        steps{
+            sh 'echo "Hello"'
+          }
+        }
+      }
+    }
+}
